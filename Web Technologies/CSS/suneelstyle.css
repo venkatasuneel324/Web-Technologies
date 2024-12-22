@@ -1,0 +1,32 @@
+.change-bg-img{
+    background-image: url(Lion.jpg);
+}
+.change-bg1-color{
+    background-color: blue;
+}
+.change-bg2-color{
+    background-color: goldenrod;
+}
+.change-bg3-color{
+    background-color: hotpink;
+}
+.change-text1-color{
+    color: whitesmoke;
+}
+.change-text2-color{
+    color: khaki;
+}
+.change-text3-color{
+    color: plum;
+}
+.change-font{
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-style: italic;
+}
+.change-box{
+    margin: 5px;
+    padding: 10px;
+    border: 5px solid greenyellow;
+}

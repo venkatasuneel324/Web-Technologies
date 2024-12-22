@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>HTML FORM4</title>
+</head>
+<body>
+    <form>
+        <table cellspacing="10px" align="center">
+            <caption><h3>Registration Form</h3></caption>
+            <tr>
+                <td>
+                    <lable>First Name:</lable>
+                    <input type="text">
+                </td>
+                <td>
+                    <lable>Last Name:</lable>
+                    <input type="text">
+                </td>
+                </tr>
+                <tr>
+                    <td>
+                        <lable>Birthday:</lable>
+                        <input type="date" placeholder="dd/mm/yyyy">
+                    </td>
+                    <td>
+                        <lable>Gender:</lable>
+                        <input type="radio" MALE>male
+                        <input type="radio" FEMALE>female
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <lable>Email:</lable>
+                        <input type="text">
+                    </td>
+                    <td>
+                        <lable>Phone Number:</lable>
+                        <input type="text">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <lable>Subject:</lable>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <select>
+                            <option>Choose option &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</option>
+                            <option>CIVIL</option>
+                            <option>CSC</option>
+                            <option>MECH</option>
+                            <option>EEE</option>
+                            <option>ECE</option>
+                            <option>IT</option>
+                            <option>AIML</option>
+                            <option>AIDS</option>
+                            <option>IOT</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" placeholder="submit">
+                    </td>
+                </tr>
+        </table>
+    </form>    
+</body>
+</html>
