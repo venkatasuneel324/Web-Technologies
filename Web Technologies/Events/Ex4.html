@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Focus: Blur And Focus</title>
+    <script>
+        function fun1(){
+            let data=document.getElementById('t1').value
+            document.getElementById('t1').value=data.toUpperCase()
+        }
+        function fun2(){
+            let data=document.getElementById('t2').value
+            document.getElementById('t2').value=data.toLowerCase()
+        }
+    </script>
+</head>
+<body>
+    Enter Your Name:
+    <input type="text" id="t1" value="suneel" onblur="fun1()">
+    <br><br>
+    Enter Your Email:
+    <input type="text" id="t2" value="VENKATASUNEEL324@gmail.com" onfocus="fun2()">
+</body>
+</html>

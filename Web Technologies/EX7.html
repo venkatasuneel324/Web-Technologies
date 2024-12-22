@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+    <title>drawbacks with var keyword</title>
+</head>
+<body>
+    <script>
+        //1.var isredeclare 
+        var age=23
+        console.log(age)
+        var age=23
+        console.log(age)
+
+        //2.hoisting => assining value to varible before declaring
+        hight=6.6
+        console.log(hight)
+        var hight
+
+
+        //3.var cannot have block scope
+        function dosomthing(){
+            var x=99
+            console.log(x);
+            if(x>0)
+        {
+            var y=999;
+        }
+        console.log(y);
+        }
+        dosomthing()
+    </script>
+</body>
+</html>

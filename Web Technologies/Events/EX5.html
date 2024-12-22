@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Form: Submit And Reset</title>
+    <style>
+        span {
+            color: red;
+        }
+    </style>
+    <script>
+        function fun1() {
+            let userid = document.getElementById('id1').value
+            let password = document.getElementById('id2').value
+
+            //validation: checking proper entry of the data in the form
+            if (userid == '') {
+                alert('userid should not be empty')
+                return false;
+            }
+            if (password == '') {
+                alert('password should not be empty')
+                return false;
+            }
+            else {
+                //let msg=`hello:${userid} your password is ${password}`
+                alert('data is valid')
+                return true;
+            }
+        }
+        function fun2() {
+            let result = confirm('are you sure to clear')
+            if (result == 0) {
+                return true
+            } else {
+                return false
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <form name="f1" action="serverpage1" method="get" onsubmit="return fun1()" onreset=" return fun2()">
+        <table align="center">
+            <tr>
+                <td>
+                    <label for="id1"> Enter Your User id</label>
+                </td>
+                <td>
+                    <input type="text" id="id1" name="n1">
+                    <span id="s1">*</span>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="id2"> Enter Your password</label></td>
+                <td><input type="password" id="id2" name="n2"> 
+                    <span id="s2">*</span>
+                </td>
+
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" value="sigin">
+                </td>
+                <td>
+                    <input type="reset" value="clear">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>

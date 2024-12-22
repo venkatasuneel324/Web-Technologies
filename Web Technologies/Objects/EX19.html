@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>JS Objects:apply()
+    </title>
+</head>
+
+<body>
+    <script>
+        //function expression 
+        let show = function (age,city,gender) {
+            console.log(`${this.id} id name is: ${this.Name} age=${age} city=${city} gender ${gender}`)
+        }
+        let student = {
+            id: 1001,
+            Name: 'SUNEEL',
+        }
+        let employee = {
+            id: 5001,
+            Name: 'VENKAT',
+        }
+        show.apply(student,[20,'hyd','male'])
+        show.apply(employee,[22,'puna','male'])
+    </script>
+
+</body>
+
+</html>

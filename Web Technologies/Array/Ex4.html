@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //splice(): add and remove elements
+        //syntax:   splice(p1,p2,p3,p4,p5,p6......)
+        //syntax: splice(begning index,count of removel element,i1,i2...)
+        //step 1: create an empty array with name "months"
+        let months =[]
+        //step 2:add jan,feb,mar months in the bigining
+        months.splice(0,0,'jan','feb','mar')
+        //step 3: add apr, may months after the 2nd index
+        months.splice(2,0,'apr','may')
+        //step 4: add dupapr,dupmay months after the 4th index
+        months.splice(5,0,'dupapr','dupmay')
+        //step 5: remove first 2 months
+        months.splice(0,2)
+        //step 6: remove last 2 months
+        months.splice(3,2)
+        //step 7: add one, two,three months names and delete mar,apr and may
+        months.splice(0,3,'one','two','three')
+        console.log(months)
+    </script>
+</body>
+</html>

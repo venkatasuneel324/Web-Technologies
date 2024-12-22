@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let cartItem = []
+        // cartItem.push('biryani')
+        // cartItem.push('chicken')
+        // cartItem.push('chicken wings')
+        // cartItem.push('butter nons')
+        // console.log(cartItem);
+        // cartItem.pop()
+        // cartItem.pop()
+        // console.log(cartItem)
+
+
+
+
+        cartItem.unshift('biryani')   //0 -biryani
+        cartItem.unshift('chicken')   //0 -chicken and 1-biryani
+        cartItem.unshift('chicken wings') //0 -chicken wings and 1-chicken and 2-biryani
+        cartItem.unshift('butter nons') // 0 -butter nons and 1-chicken wings and 2-chicken and 3-biryani
+        console.log(cartItem);
+        cartItem.shift() // 0 -chicken wings and 1-chicken and 2
+        cartItem.shift()
+        console.log(cartItem)
+    </script>
+</body>
+</html>

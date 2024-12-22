@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>add a new property to the exiting object</title>
+</head>
+
+<body>
+    <script>
+        let student = { 'id': 1, 'marks': 740, 'fristname': 'suneel' }
+        //1.adding new property
+        student['age'] = 25
+        //2.addind duplate value
+        student['marks'] = 710
+        //3.checking key is exist or not 
+        if (('last name' in student)) {
+            console.log('key is already exit')
+        } else {
+            student['last name'] = 'kumar'
+        }
+        console.log(student)
+        //3.checking key is exist or not 
+        if (('city' in student)) {
+            console.log('key is already exit')
+        } else {
+            student['city'] = 'hyd'
+        }
+        console.log(student)
+        //delete property
+        delete student['marks']
+        console.log(student)
+
+
+
+    </script>
+</body>
+
+</html>

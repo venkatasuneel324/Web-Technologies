@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>simpleinterst</title>
+</head>
+
+<body>
+    <script> 
+    
+        let simpleinterst = function (p, t, r) {
+            let result;
+            result = (p * t * r) / 100
+            return result
+        }
+        let temp = simpleinterst(10000, 12, 12)
+        console.log(temp)
+
+        //2.function expression cannot be allow hoisting
+
+        // let temp = simpleinterst(10000, 12, 12)
+        // console.log(temp)
+        // let temp = simpleinterst(10000, 12, 12)
+        // console.log(temp)
+        // let simpleinterst = function (p, t, r) {
+        //     let result;
+        //     result = (p * t * r) / 100
+        //     return result
+        // }
+
+
+        // //1.functionex expression cannot allow function re-declaration
+
+        // let simpleinterst=function(p,t,r){
+        //     let result;
+        //     result=(p*t*r)/100
+        //     return result
+        // }
+    </script>
+</body>
+
+</html>

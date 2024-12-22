@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>inner functions</title>
+</head>
+<body>
+    <script>
+        function one(){
+            let x=10
+            console.log(`inside one:x=${x}`)
+            function two(){
+            let y=30
+            console.log(`inside one:x=${x},y=${y}`)
+            function three(){
+            let z=50
+            console.log(`inside one:x=${x},y=${y},z=${z}`)
+        }
+        three()
+        }
+        two()
+        }
+        one()
+    </script>
+</body>
+</html>

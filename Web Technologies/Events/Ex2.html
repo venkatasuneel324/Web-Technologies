@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Mouse: mouseenter and mouseleave</title>
+    <style>
+        div{
+            background-color: rgb(1, 30, 30);
+            color:  lime;
+            height: 100px;
+        }
+    </style>
+    <script>
+        function fun1(){
+            document.getElementsByTagName('div')[0].innerHTML='Hello'
+        }
+        function fun2(){
+            document.getElementsByTagName('div')[0].innerHTML='World' 
+        }
+    </script>
+</head>
+<body>
+    <div onmouseenter="fun1()" onmouseleave="fun2()">
+        welcome to Div
+    </div>
+</body>
+</html>

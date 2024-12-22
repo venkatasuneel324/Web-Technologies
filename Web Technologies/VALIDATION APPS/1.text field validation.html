@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>text feild validation</title>
+    <script>
+        function validation(){
+            var name = document.getElementById("name").value
+            if(name==""){
+                alert("name can't be blank")
+                return false;
+            }else if(name.length<6){
+                alert("name must be at least 6 characters long")
+                return false;
+            }else{
+                return true
+            }
+        }
+    </script>
+</head>
+<body>
+    <form name="f1" action="abc.jsp" onsubmit="return validation()">
+    Name:<input type="text" id="t1" name="personname"><br>
+    <input type="submit" value="validate">
+    </form>
+</body>
+</html>

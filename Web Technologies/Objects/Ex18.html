@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>JS Objects:call()
+    </title>
+</head>
+
+<body>
+    <script>
+        //function expression 
+        let show = function (age,city) {
+            console.log(`${this.id} id name is: ${this.Name} age=${age} city=${city}`)
+        }
+        let student = {
+            id: 1001,
+            Name: 'SUNEEL',
+
+        }
+
+
+        let employee = {
+            id: 5001,
+            Name: 'VENKAT',
+
+        }
+        show.call(student,20,'hyd')
+        show.call(employee,22,'puna')
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>add a new property to the exiting object</title>
+</head>
+
+<body>
+    <script>
+        let productId =101;
+        let productName = 'asus laptop';
+        let productPrice = 50000;
+        //object packing
+        let product = {productId,productName,productPrice};
+        console.log(product);
+
+        //object destructuring / unpacking
+        let a,b,c
+        a,b,c = {product},
+        console.log(a);
+        console.log(b);
+        console.log(c);
+        
+    </script>
+</body>
+
+</html>

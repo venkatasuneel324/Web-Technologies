@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let  salaries =[12000,34000,56000,20000,80000]
+        //to access/fatch element by element for array
+        //approch1: for loop
+        for (let i=0;i<salaries.length;i++){
+            console.log(salaries[i]);
+        }
+        //approch2: for of loop
+        for (let salary of salaries){
+            console.log(salary)
+        }
+        //approch3 forEach() method
+        salaries.forEach((sal)=>{
+            console.log(sal);
+        })
+    </script>
+</body>
+</html>

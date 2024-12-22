@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>
+        array of objects
+    </title>
+</head>
+
+<body>
+    <script>
+        //object
+        //object
+        let student = {
+            id: 1,
+            marks: 740,
+            hobbies: ['reading books', 'singining'],
+            phonenumber: [9866113432, 8688737208],
+            name: {
+                firstname: 'uppugandla',
+                middlename: 'venkata',
+                lastname: 'suneel',
+            },
+            address: {
+                doornum: 18 - 3,
+                street: 'kangiri',
+                city: 'ongole',
+                pincode: 523117,
+                location: {
+                    latitude: 39.2222,
+                    longitude: 68.7777,
+                }
+
+            }
+        }
+        console.log(student)
+        //access hobbies
+        console.log(student.hobbies);
+        console.log(student.phonenumber)
+        //access name
+        console.log(student.name)
+        //access last name
+        console.log(student.name.lastname)
+        //access address
+        console.log(student.address);
+        //access pincode
+        console.log(student.address.pincode);
+        //access latitude
+        console.log(student.address.location.latitude)
+    </script>
+</body>
+
+</html>

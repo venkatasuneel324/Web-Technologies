@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Default parameters</title>
+</head>
+
+<body>
+    <script>
+        //Not a number(NaN)
+        function addition(a,b,c){
+            console.log(a+b+c);
+        }
+        addition()
+
+        //
+        function addition(a=10,b=20,c=30){
+            console.log(a+b+c);
+        }
+        addition()
+        addition(100)
+        addition(100,200,300)
+    </script>
+</body>
+
+</html>

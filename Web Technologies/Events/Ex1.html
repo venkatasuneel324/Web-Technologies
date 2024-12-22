@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>mouse: click and dbclick</title>
+    <script>
+        function fun1(){
+            let fname=document.getElementById('t1').Value
+            let lname=document.getElementById('t2').Value
+            
+            let msg= `your firstname:${fname} Your lastname:${lname}` 
+            alert(msg)
+
+        }
+    </script>
+</head>
+<body>
+    FirstName:<input type="text" id="t1"><br>
+    SecondName:<input type="text" id="t2"><br>
+    <button onclick="fun1()">
+        Show FullName
+    </button>
+</body>
+</html>

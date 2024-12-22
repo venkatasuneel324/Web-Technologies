@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Advanced array functions</title>
+</head>
+<body>
+    <script>
+        let salaries =[10000,20000,45000,55000,43000]
+        //R1:   print sum of salaries
+        let sum =salaries.reduce((a,b)=>a+b)
+        console.log(sum);
+        //R2: prepare a new array with salaries whose salaries below 50K
+        let below50k =salaries.filter(salary=>salary<50000)
+        console.log(below50k)
+
+        let everyresult =salaries.every(salary=>salary<50000)
+        console.log(everyresult)
+
+        let someyresult =salaries.some(salary=>salary<50000)
+        console.log(someyresult)
+
+        //R3: prepare a new array with salaries by adding 3000 as bonus
+        let newsalaries=salaries.map(salary=>salary+3000)
+        console.log(newsalaries)
+    </script>
+</body>
+</html>

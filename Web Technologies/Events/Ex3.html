@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>key: keyup,keydown and keypress</title>
+    <script>
+        function fun1(){
+            let s=document.getElementById('t1').Value
+            document.getElementById('p1').innerHTML= s
+
+        }
+    </script>
+</head>
+<body>
+    Enter Your Name: <input type="text" id="t1" onkeypress="fun1()">
+    <br><br>
+    Your Name: <span id="p1"></span>
+</body>
+</html>
